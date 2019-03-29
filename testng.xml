@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="3" name="Test" parallel="true">
+  <groups>
+  <run>
+  <include name="smoke"></include>
+  </run>
+  </groups>
+  <classes>
+      <class name="TestCase.TC_008_ToolTip"/>
+      <class name="TestCase.TC_006_Spinner"/>
+      <class name="TestCase.TC_007_Tabs"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
