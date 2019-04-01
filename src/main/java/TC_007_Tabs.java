@@ -5,6 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class TC_007_Tabs {
@@ -19,6 +21,10 @@ public class TC_007_Tabs {
 		d.switchTo().frame(0);
 		
 		WebElement tab1 = d.findElement(By.xpath("//a[@id='ui-id-1']"));
+		
+		
+		
+		
 		System.out.println(tab1.getText());
 		String text = d.findElement(By.xpath("//div[@id='tabs-1']//p")).getText();
 		System.out.println(text);
