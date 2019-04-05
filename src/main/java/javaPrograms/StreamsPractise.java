@@ -42,6 +42,7 @@ public class StreamsPractise {
 		System.out.println(stats.getMin());
 		System.out.println(stats.getMax());
 		
+		
 			
 		
 		

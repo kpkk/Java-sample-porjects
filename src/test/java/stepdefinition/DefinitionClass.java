@@ -1,8 +1,11 @@
 package stepdefinition;
 
+import java.util.List;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 
 public class DefinitionClass {
 	
@@ -12,9 +15,13 @@ public class DefinitionClass {
 	    
 	}
 
-	@When("enetered the username and password")
-	public void enetered_the_username_and_password() {
-		 System.out.println("this is when step");
+	@When("^enter the username \"(.*)\" and password \"(.*)\"")
+	public void enetered_the_username_and_password(String s1, String s2) {
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		 
+		 
 	  
 	}
 
